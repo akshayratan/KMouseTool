@@ -1,0 +1,3 @@
+/home/dell/BuildNew/kmousetool/kmousetool/CMakeFiles/kmousetool.dir
+/home/dell/BuildNew/kmousetool/kmousetool/CMakeFiles/kmousetool_automoc.dir
+/home/dell/BuildNew/kmousetool/kmousetool/CMakeFiles/uninstall.dir

@@ -1,0 +1,4 @@
+# Hashes of file build rules.
+cdfbac8f3a869d24e40ec95c7a185db0 CMakeFiles/kmousetool_automoc
+e530f33c465f08c6808748a596934845 CMakeFiles/uninstall
+962599b6920712ba9314df20d0346c3e ui_kmousetoolui.h

@@ -1,0 +1,54 @@
+this is a part of my code in kmousetool.cpp_____
+
+void KMouseTool::setCurrentIndex(int)
+{
+    
+    DisableKey->itemData(DisableKey->currentIndex()); // ignore please 
+    
+}
+
+//kmodifier function
+bool KModifierKeyInfo::isKeyPressed(Qt::Key key) const
+{
+    return p->isKeyPressed(key);
+}
+
+bool KMouseTool::implement()
+{
+        if(KMouseTool::currentIndex()==1 && isKeyPressed(Qt::Key_Control)==true)
+            return true;
+        if(KMouseTool::currentIndex()==2 && isKeyPressed(Qt::Key_Alt)==true)
+            return true;
+        if(KMouseTool::currentIndex()==3 && isKeyPressed(Qt::Key_Shift)==true)
+            return true;
+        if(KMouseTool::currentIndex()==4 && isKeyPressed(Qt::Key_NumLock)==true)
+            return true;
+        else
+        return false;
+}
+
+
+
+error________
+dell@ubuntu:~/BuildNew/kmousetool/kmousetool$ make
+Scanning dependencies of target kmousetool_automoc
+Generating kmousetool.moc
+[  0%] Built target kmousetool_automoc
+Scanning dependencies of target kmousetool
+[ 20%] Building CXX object CMakeFiles/kmousetool.dir/mtstroke.o
+[ 40%] Building CXX object CMakeFiles/kmousetool.dir/kmousetool.o
+/home/dell/BuildNew/kmousetool/kmousetool/kmousetool.cpp: In member function ‘bool KModifierKeyInfo::isKeyPressed(Qt::Key) const’:
+/home/dell/BuildNew/kmousetool/kmousetool/kmousetool.cpp:494:13: error: invalid use of incomplete type ‘struct KModifierKeyInfoProvider’
+/usr/include/kmodifierkeyinfo.h:28:7: error: forward declaration of ‘struct KModifierKeyInfoProvider’
+/home/dell/BuildNew/kmousetool/kmousetool/kmousetool.cpp: At global scope:
+/home/dell/BuildNew/kmousetool/kmousetool/kmousetool.cpp:589:1: error: ‘setC’ does not name a type
+/home/dell/BuildNew/kmousetool/kmousetool/kmousetool.cpp: In member function ‘bool KModifierKeyInfo::isKeyPressed(Qt::Key) const’:
+/home/dell/BuildNew/kmousetool/kmousetool/kmousetool.cpp:495:1: error: control reaches end of non-void function [-Werror=return-type]
+/home/dell/BuildNew/kmousetool/kmousetool/kmousetool.cpp: In member function ‘void KMouseTool::setAutostart(bool)’:
+/home/dell/BuildNew/kmousetool/kmousetool/kmousetool.cpp:447:23: warning: ignoring return value of ‘int system(const char*)’, declared with attribute warn_unused_result [-Wunused-result]
+cc1plus: some warnings being treated as errors
+
+make[2]: *** [CMakeFiles/kmousetool.dir/kmousetool.o] Error 1
+make[1]: *** [CMakeFiles/kmousetool.dir/all] Error 2
+make: *** [all] Error 2
+

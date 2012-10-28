@@ -1,0 +1,347 @@
+#include <kdialog.h>
+#include <klocale.h>
+
+/********************************************************************************
+** Form generated from reading UI file 'kmousetoolui.ui'
+**
+** Created: Tue Jul 24 22:49:36 2012
+**      by: Qt User Interface Compiler version 4.7.4
+**
+** WARNING! All changes made in this file will be lost when recompiling UI file!
+********************************************************************************/
+
+#ifndef UI_KMOUSETOOLUI_H
+#define UI_KMOUSETOOLUI_H
+
+#include <QtCore/QVariant>
+#include <QtGui/QAction>
+#include <QtGui/QApplication>
+#include <QtGui/QButtonGroup>
+#include <QtGui/QCheckBox>
+#include <QtGui/QComboBox>
+#include <QtGui/QGridLayout>
+#include <QtGui/QGroupBox>
+#include <QtGui/QHBoxLayout>
+#include <QtGui/QHeaderView>
+#include <QtGui/QLabel>
+#include <QtGui/QSpacerItem>
+#include <QtGui/QWidget>
+#include <knuminput.h>
+#include <kpushbutton.h>
+#include "knuminput.h"
+#include "kpushbutton.h"
+
+QT_BEGIN_NAMESPACE
+
+class Ui_KMouseToolUI
+{
+public:
+    QGridLayout *gridLayout;
+    QHBoxLayout *hboxLayout;
+    QLabel *textLabel1;
+    QSpacerItem *spacerItem;
+    KPushButton *buttonStartStop;
+    QGroupBox *groupBox1;
+    QGridLayout *gridLayout1;
+    QGridLayout *gridLayout2;
+    QSpacerItem *spacerItem1;
+    QLabel *dragTimeLabel;
+    KIntSpinBox *dragTimeEdit;
+    KIntSpinBox *dwellTimeEdit;
+    QLabel *movementLabel;
+    KIntSpinBox *movementEdit;
+    QCheckBox *cbStroke;
+    QLabel *dwellTimeLabel;
+    QCheckBox *cbDrag;
+    QHBoxLayout *hboxLayout1;
+    KPushButton *buttonDefault;
+    KPushButton *buttonReset;
+    QSpacerItem *spacerItem2;
+    KPushButton *buttonApply;
+    QCheckBox *cbStart;
+    QCheckBox *cbClick;
+    QComboBox *DisableKey;
+    QSpacerItem *spacerItem3;
+    QHBoxLayout *hboxLayout2;
+    KPushButton *buttonHelp;
+    QSpacerItem *spacerItem4;
+    KPushButton *buttonClose;
+    KPushButton *buttonQuit;
+
+    void setupUi(QWidget *KMouseToolUI) {
+        if (KMouseToolUI->objectName().isEmpty())
+            KMouseToolUI->setObjectName(QString::fromUtf8("KMouseToolUI"));
+        KMouseToolUI->resize(572, 556);
+        gridLayout = new QGridLayout(KMouseToolUI);
+#ifndef UI_Q_OS_MAC
+        gridLayout->setSpacing(6);
+#endif
+        gridLayout->setContentsMargins(11, 11, 11, 11);
+        gridLayout->setObjectName(QString::fromUtf8("gridLayout"));
+        hboxLayout = new QHBoxLayout();
+#ifndef UI_Q_OS_MAC
+        hboxLayout->setSpacing(6);
+#endif
+#ifndef UI_Q_OS_MAC
+        hboxLayout->setContentsMargins(0, 0, 0, 0);
+#endif
+        hboxLayout->setObjectName(QString::fromUtf8("hboxLayout"));
+        textLabel1 = new QLabel(KMouseToolUI);
+        textLabel1->setObjectName(QString::fromUtf8("textLabel1"));
+        QSizePolicy sizePolicy(QSizePolicy::Expanding, QSizePolicy::Preferred);
+        sizePolicy.setHorizontalStretch(0);
+        sizePolicy.setVerticalStretch(0);
+        sizePolicy.setHeightForWidth(textLabel1->sizePolicy().hasHeightForWidth());
+        textLabel1->setSizePolicy(sizePolicy);
+        textLabel1->setScaledContents(false);
+        textLabel1->setAlignment(Qt::AlignJustify | Qt::AlignVCenter);
+        textLabel1->setWordWrap(true);
+
+        hboxLayout->addWidget(textLabel1);
+
+        spacerItem = new QSpacerItem(8, 8, QSizePolicy::Fixed, QSizePolicy::Minimum);
+
+        hboxLayout->addItem(spacerItem);
+
+        buttonStartStop = new KPushButton(KMouseToolUI);
+        buttonStartStop->setObjectName(QString::fromUtf8("buttonStartStop"));
+        QSizePolicy sizePolicy1(QSizePolicy::Fixed, QSizePolicy::Fixed);
+        sizePolicy1.setHorizontalStretch(0);
+        sizePolicy1.setVerticalStretch(0);
+        sizePolicy1.setHeightForWidth(buttonStartStop->sizePolicy().hasHeightForWidth());
+        buttonStartStop->setSizePolicy(sizePolicy1);
+
+        hboxLayout->addWidget(buttonStartStop);
+
+
+        gridLayout->addLayout(hboxLayout, 0, 0, 1, 1);
+
+        groupBox1 = new QGroupBox(KMouseToolUI);
+        groupBox1->setObjectName(QString::fromUtf8("groupBox1"));
+        gridLayout1 = new QGridLayout(groupBox1);
+#ifndef UI_Q_OS_MAC
+        gridLayout1->setSpacing(6);
+#endif
+        gridLayout1->setContentsMargins(11, 11, 11, 11);
+        gridLayout1->setObjectName(QString::fromUtf8("gridLayout1"));
+        gridLayout2 = new QGridLayout();
+#ifndef UI_Q_OS_MAC
+        gridLayout2->setSpacing(6);
+#endif
+#ifndef UI_Q_OS_MAC
+        gridLayout2->setContentsMargins(0, 0, 0, 0);
+#endif
+        gridLayout2->setObjectName(QString::fromUtf8("gridLayout2"));
+        spacerItem1 = new QSpacerItem(16, 20, QSizePolicy::Fixed, QSizePolicy::Minimum);
+
+        gridLayout2->addItem(spacerItem1, 0, 0, 1, 1);
+
+        dragTimeLabel = new QLabel(groupBox1);
+        dragTimeLabel->setObjectName(QString::fromUtf8("dragTimeLabel"));
+        QSizePolicy sizePolicy2(QSizePolicy::Preferred, QSizePolicy::Fixed);
+        sizePolicy2.setHorizontalStretch(0);
+        sizePolicy2.setVerticalStretch(0);
+        sizePolicy2.setHeightForWidth(dragTimeLabel->sizePolicy().hasHeightForWidth());
+        dragTimeLabel->setSizePolicy(sizePolicy2);
+
+        gridLayout2->addWidget(dragTimeLabel, 0, 1, 1, 1);
+
+
+        gridLayout1->addLayout(gridLayout2, 3, 0, 1, 1);
+
+        dragTimeEdit = new KIntSpinBox(groupBox1);
+        dragTimeEdit->setObjectName(QString::fromUtf8("dragTimeEdit"));
+        QSizePolicy sizePolicy3(QSizePolicy::Minimum, QSizePolicy::Fixed);
+        sizePolicy3.setHorizontalStretch(1);
+        sizePolicy3.setVerticalStretch(0);
+        sizePolicy3.setHeightForWidth(dragTimeEdit->sizePolicy().hasHeightForWidth());
+        dragTimeEdit->setSizePolicy(sizePolicy3);
+        dragTimeEdit->setMinimum(1);
+        dragTimeEdit->setMaximum(40);
+        dragTimeEdit->setValue(3);
+
+        gridLayout1->addWidget(dragTimeEdit, 3, 1, 1, 1);
+
+        dwellTimeEdit = new KIntSpinBox(groupBox1);
+        dwellTimeEdit->setObjectName(QString::fromUtf8("dwellTimeEdit"));
+        sizePolicy3.setHeightForWidth(dwellTimeEdit->sizePolicy().hasHeightForWidth());
+        dwellTimeEdit->setSizePolicy(sizePolicy3);
+        dwellTimeEdit->setMinimum(1);
+        dwellTimeEdit->setMaximum(40);
+        dwellTimeEdit->setValue(5);
+
+        gridLayout1->addWidget(dwellTimeEdit, 1, 1, 1, 1);
+
+        movementLabel = new QLabel(groupBox1);
+        movementLabel->setObjectName(QString::fromUtf8("movementLabel"));
+
+        gridLayout1->addWidget(movementLabel, 0, 0, 1, 1);
+
+        movementEdit = new KIntSpinBox(groupBox1);
+        movementEdit->setObjectName(QString::fromUtf8("movementEdit"));
+        sizePolicy3.setHeightForWidth(movementEdit->sizePolicy().hasHeightForWidth());
+        movementEdit->setSizePolicy(sizePolicy3);
+        movementEdit->setMinimum(1);
+        movementEdit->setMaximum(40);
+
+        gridLayout1->addWidget(movementEdit, 0, 1, 1, 1);
+
+        cbStroke = new QCheckBox(groupBox1);
+        cbStroke->setObjectName(QString::fromUtf8("cbStroke"));
+
+        gridLayout1->addWidget(cbStroke, 4, 0, 1, 2);
+
+        dwellTimeLabel = new QLabel(groupBox1);
+        dwellTimeLabel->setObjectName(QString::fromUtf8("dwellTimeLabel"));
+        sizePolicy2.setHeightForWidth(dwellTimeLabel->sizePolicy().hasHeightForWidth());
+        dwellTimeLabel->setSizePolicy(sizePolicy2);
+
+        gridLayout1->addWidget(dwellTimeLabel, 1, 0, 1, 1);
+
+        cbDrag = new QCheckBox(groupBox1);
+        cbDrag->setObjectName(QString::fromUtf8("cbDrag"));
+        cbDrag->setChecked(true);
+
+        gridLayout1->addWidget(cbDrag, 2, 0, 1, 2);
+
+        hboxLayout1 = new QHBoxLayout();
+#ifndef UI_Q_OS_MAC
+        hboxLayout1->setSpacing(6);
+#endif
+        hboxLayout1->setContentsMargins(0, 0, 0, 0);
+        hboxLayout1->setObjectName(QString::fromUtf8("hboxLayout1"));
+        buttonDefault = new KPushButton(groupBox1);
+        buttonDefault->setObjectName(QString::fromUtf8("buttonDefault"));
+
+        hboxLayout1->addWidget(buttonDefault);
+
+        buttonReset = new KPushButton(groupBox1);
+        buttonReset->setObjectName(QString::fromUtf8("buttonReset"));
+
+        hboxLayout1->addWidget(buttonReset);
+
+        spacerItem2 = new QSpacerItem(31, 20, QSizePolicy::Expanding, QSizePolicy::Minimum);
+
+        hboxLayout1->addItem(spacerItem2);
+
+        buttonApply = new KPushButton(groupBox1);
+        buttonApply->setObjectName(QString::fromUtf8("buttonApply"));
+
+        hboxLayout1->addWidget(buttonApply);
+
+
+        gridLayout1->addLayout(hboxLayout1, 7, 0, 1, 2);
+
+        cbStart = new QCheckBox(groupBox1);
+        cbStart->setObjectName(QString::fromUtf8("cbStart"));
+
+        gridLayout1->addWidget(cbStart, 6, 0, 1, 2);
+
+        cbClick = new QCheckBox(groupBox1);
+        cbClick->setObjectName(QString::fromUtf8("cbClick"));
+
+        gridLayout1->addWidget(cbClick, 5, 0, 1, 2);
+
+
+        gridLayout->addWidget(groupBox1, 1, 0, 1, 1);
+
+        DisableKey = new QComboBox(KMouseToolUI);
+        DisableKey->setObjectName(QString::fromUtf8("DisableKey"));
+
+        gridLayout->addWidget(DisableKey, 2, 0, 1, 1);
+
+        spacerItem3 = new QSpacerItem(20, 30, QSizePolicy::Minimum, QSizePolicy::Expanding);
+
+        gridLayout->addItem(spacerItem3, 3, 0, 1, 1);
+
+        hboxLayout2 = new QHBoxLayout();
+#ifndef UI_Q_OS_MAC
+        hboxLayout2->setSpacing(6);
+#endif
+        hboxLayout2->setContentsMargins(0, 0, 0, 0);
+        hboxLayout2->setObjectName(QString::fromUtf8("hboxLayout2"));
+        buttonHelp = new KPushButton(KMouseToolUI);
+        buttonHelp->setObjectName(QString::fromUtf8("buttonHelp"));
+
+        hboxLayout2->addWidget(buttonHelp);
+
+        spacerItem4 = new QSpacerItem(241, 20, QSizePolicy::Expanding, QSizePolicy::Minimum);
+
+        hboxLayout2->addItem(spacerItem4);
+
+        buttonClose = new KPushButton(KMouseToolUI);
+        buttonClose->setObjectName(QString::fromUtf8("buttonClose"));
+
+        hboxLayout2->addWidget(buttonClose);
+
+        buttonQuit = new KPushButton(KMouseToolUI);
+        buttonQuit->setObjectName(QString::fromUtf8("buttonQuit"));
+
+        hboxLayout2->addWidget(buttonQuit);
+
+
+        gridLayout->addLayout(hboxLayout2, 4, 0, 1, 1);
+
+#ifndef UI_QT_NO_SHORTCUT
+        dragTimeLabel->setBuddy(dragTimeEdit);
+        movementLabel->setBuddy(movementEdit);
+        dwellTimeLabel->setBuddy(dwellTimeEdit);
+#endif // QT_NO_SHORTCUT
+
+        retranslateUi(KMouseToolUI);
+        QObject::connect(cbDrag, SIGNAL(toggled(bool)), dragTimeLabel, SLOT(setEnabled(bool)));
+        QObject::connect(cbDrag, SIGNAL(toggled(bool)), dragTimeEdit, SLOT(setEnabled(bool)));
+
+        QMetaObject::connectSlotsByName(KMouseToolUI);
+    } // setupUi
+
+    void retranslateUi(QWidget *KMouseToolUI) {
+        KMouseToolUI->setWindowTitle(tr2i18n("KMouseTool", 0));
+        textLabel1->setText(tr2i18n("KMouseTool will run as a background application after you close this dialog. To change the settings again, restart KMouseTool or use the KDE system tray.", 0));
+        buttonStartStop->setText(tr2i18n("&Start", 0));
+        groupBox1->setTitle(tr2i18n("Settings", 0));
+        dragTimeLabel->setText(tr2i18n("Drag t&ime (1/10 sec):", 0));
+        movementLabel->setText(tr2i18n("&Minimum movement:", 0));
+        cbStroke->setText(tr2i18n("&Enable strokes", 0));
+        dwellTimeLabel->setText(tr2i18n("D&well time (1/10 sec):", 0));
+        cbDrag->setText(tr2i18n("Smar&t drag", 0));
+        buttonDefault->setText(tr2i18n("&Defaults", 0));
+        buttonReset->setText(tr2i18n("&Reset", 0));
+        buttonApply->setText(tr2i18n("&Apply", 0));
+        cbStart->setText(tr2i18n("Start with &KDE", 0));
+        cbClick->setText(tr2i18n("A&udible click", 0));
+        DisableKey->clear();
+        DisableKey->insertItems(0, QStringList()
+                                << tr2i18n("NONE", 0)
+                                << tr2i18n("CTRL", 0)
+                                << tr2i18n("ALT", 0)
+                                << tr2i18n("SHIFT", 0)
+                                << tr2i18n("NUM", 0)
+                               );
+#ifndef UI_QT_NO_TOOLTIP
+        DisableKey->setToolTip(tr2i18n("<!DOCTYPE HTML PUBLIC \"-//W3C//DTD HTML 4.0//EN\" \"http://www.w3.org/TR/REC-html40/strict.dtd\">\n"
+                                       "<html><head><meta name=\"qrichtext\" content=\"1\" /><style type=\"text/css\">\n"
+                                       "p, li { white-space: pre-wrap; }\n"
+                                       "</style></head><body style=\" font-family:'Ubuntu'; font-size:11pt; font-weight:400; font-style:normal;\">\n"
+                                       "<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-weight:600;\">Select the temporary disable key</span></p>\n"
+                                       "<p style=\"-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"></p></body></html>", 0));
+#endif // QT_NO_TOOLTIP
+#ifndef UI_QT_NO_WHATSTHIS
+        DisableKey->setWhatsThis(tr2i18n("Select the temporary disable key", 0));
+#endif // QT_NO_WHATSTHIS
+        buttonHelp->setText(tr2i18n("&Help", 0));
+        buttonClose->setText(tr2i18n("&Close", 0));
+        buttonQuit->setText(tr2i18n("&Quit", 0));
+    } // retranslateUi
+
+};
+
+namespace Ui
+{
+class KMouseToolUI: public Ui_KMouseToolUI {};
+} // namespace Ui
+
+QT_END_NAMESPACE
+
+#endif // KMOUSETOOLUI_H
+
